@@ -1,4 +1,3 @@
-common-beauty
-=============
+#bjc-resources
 
-A collection of shared resources for CS10, Snap! and BJC websites. 
+Assets and other things related to BJC and CS10.
