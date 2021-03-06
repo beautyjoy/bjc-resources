@@ -1,0 +1,11 @@
+##AlfredToDo 3.0
+Job -title {Byob8 (px_render job)} -metadata {tool:px_render menv:release-daily.00034 rman:16.0 unit:m2 prod:pppetertsoi dept:animation} -comment {#Created for petertsoi by px_render 1.0 (Thu Aug 02 06:29:27 PM PDT 2012)} -envKey {} -dirmaps {} -service {} -tags {} -atleast 1 -atmost 1 -whendone {} -whenerror {} -crews {alfie:10} -pbias 0 -init {
+
+} -subtasks {
+	Task -title {mainCam.Byob8} -atleast 1 -atmost 10 -samehost 1 -subtasks {
+	} -cmds {
+		Cmd {/usr/anim/toolsrels/release-daily.00034/bin/alfcdexec /pixar/ws/users/petertsoi/m2/modbgchars/src/SlugC RMANTREE=/dist/sw/rman/16.0 && export RMANTREE && RIFPATH=`/usr/anim/toolsrels/release-daily.00034/bin/toolpaths RIFPATH` && export RIFPATH && UNIT=m2 && export UNIT && PROD=pppetertsoi && export PROD && /dist/sw/script/release-daily.00034/bin/pixprman $@  -Progress -t:%n /pixar/ws/users/petertsoi/m2/modbgchars/src/SlugC/PXRENDER/Job.0196/rib/0001.Byob8.defaultRenderLayer.main.mainCam.rib} -service {local:pixarRender} -tags {prman m2-mtor-remote}
+		} -cleanup {
+	}
+} -cleanup {
+}

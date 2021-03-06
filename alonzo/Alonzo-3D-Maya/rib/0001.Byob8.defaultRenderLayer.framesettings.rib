@@ -1,0 +1,34 @@
+Option "user" "constant string ELEMENT_BASENAME" ["${user:PXRENDER_PASS_TYPE}"]
+IfBegin "${user:PXRENDER_PASS_TYPE} == 'depth'"
+	Option "user" "int RATFilterLightSource" [1]
+	IfBegin "!defined(user:ForceShadeShadow)"
+	Option "user" "int RATFilterSurface" [1]
+	IfEnd
+	Option "limits" "int zthreshold" [0.5 0.5 0.5]
+	Hider "hidden" "int jitter" [0] "string depthfilter" ["min"]
+	Option "trace" "int maxdepth" [0]
+	Exposure 1 1
+	PixelSamples 1 1
+	PixelFilter "box" 1 1
+	ShadingRate 0.5
+	Display "${user:PXRENDER_RENDERS_LOCATION}/${user:PXRENDER_PASS_NAME}.z.sm" "shadow" "z"
+Else
+	IfBegin "${user:PXRENDER_RAYTRACE} == '1'"
+		Option "trace" "int maxdepth" [1]
+		IfBegin "${user:PXRENDER_HOTRENDER} == '1'"
+			Hider "raytrace" "string samplemode" "adaptive"
+		IfEnd
+	Else
+		Option "trace" "int maxdepth" [0]
+	IfEnd
+	Exposure 1 1
+	Quantize "rgba" 0 0 0 0
+	PixelSamples 11 11
+	PixelFilter "triangle" 2 2
+	ShadingRate 0.5
+	IfBegin "${user:PXRENDER_HOTRENDER} == '1'"
+		Display "dspy://localhost/mtor/HotRender.exr" "pxdspy" "rgba"
+	Else
+		Display "dspy://localhost/mtor/${user:PXRENDER_PASS_NAME}.exr" "pxdspy" "rgba" "int merge" [0] "string ICCprofile" ["/usr/anim/toolsrels/amber-release-daily.00035/lib/icc.framework/Resources/profiles/PixarRec709Linear2010.icc"] "string filmGogglesHint" ["off"] "string dspyParams" ["dspyRender -context /home/petertsoi/Desktop/Byob8 -time 1 -renderer 1 -crop 0 1 0 1 -port 43152 -workspace /pixar/ws/users/petertsoi/m2/modbgchars/src/SlugC -filename /home/petertsoi/Desktop/Byob8;"]
+	IfEnd
+IfEnd

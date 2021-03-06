@@ -1,0 +1,15 @@
+IfBegin "${user:PXRENDER_RAYTRACE} == '1'"
+Attribute "visibility" "int camera" [1]
+Attribute "visibility" "int trace" [1]
+Attribute "visibility" "int photon" [1]
+Attribute "visibility" "int transmission" [1]
+Attribute "visibility" "int diffuse" [1]
+Attribute "trace" "int maxspeculardepth" [1]
+Attribute "trace" "int maxdiffusedepth" [1]
+Attribute "trace" "int displacements" [0]
+Attribute "user" "float OcclusionSamples" [256]
+IfEnd
+Attribute "user" "string ModelName" ["MayaWorld"]
+Attribute "user" "string InstanceName" [""]
+Attribute "user" "string ModelInstance" ["MayaWorld"]
+Attribute "user" "string ShAPIModelInstance" ["MayaWorld"]

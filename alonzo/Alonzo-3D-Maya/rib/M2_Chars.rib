@@ -1,0 +1,314 @@
+# fix texture paths
+# disable ASMs in ASM_enableincamera
+# key intmult enable in camera 0
+
+##RenderMan RIB
+version 3.04
+Illuminate "DomeAreaLight_sl_fil" 1
+TransformBegin 
+ConcatTransform [ 1000 0 0 0  0 1000 0 0  0 0 1000 0  0 0 0 1 ]
+LightSource "Alight10a/shaders/DomeAreaLight" "DomeAreaLight_sl_fil" "constant float debugShadows" [0] "constant float reflection" [0] "constant float[2] AreaShadow_mapDeepBias" [1 0.5] "constant float hwExclude" [0] "constant float exposure" [0] "constant float diffuseRecursionSamplingRatio" [0.25] "constant float illumSamplingMethod" [3] "constant string[2] AreaShadow_rayGroup" ["" ""] "constant float hwshShadowCamNear" [1] "constant float enableInCamera" [1] "constant float hwshShowDiffuse" [1] "constant string lightSpace" ["DomeAreaLight_sl_fil_lightSpace"] 
+"constant float[2] AreaShadow_isModified" [0 0] "constant float[2] AreaShadow_mapHairBiasMult" [1 1] "constant float[2] AreaShadow_hwExclude" [0 0] "constant string lightColorMap" ["archives/tex/m2/Chars_DomeAreaLight_sl_fil.tex"] "constant string[2] AreaShadow_name" ["ShaderBless_Shadow_RT" "ShaderBless_Shadow_HAIR_ASM"] "constant string[2] AreaShadow_shFileName" ["ShaderBless_Shadow_RT_lyr.ptc" "ShaderBless_Shadow_HAIR_ASM_lyr.ptc"] "constant string[2] AreaShadow_cgComponentType" ["AreaShadow" "AreaShadow"] "constant float shadowSamplingMethod" [4] "constant float shadowDensity" [1] "constant float[2] AreaShadow_threshold" [0 0] 
+"constant string __category" ["lightpbsystem,alight"] "constant string hwshDomeXf" ["DomeAreaLight_sl_fil_hwshDomeXf"] "constant float hwshShowSpecular" [1] "constant float[2] AreaShadow_mapBias" [0.30000001 0.5] "constant color shadPenumbraTint" [1 1 1] "constant string lightName" ["DomeAreaLight_sl_fil"] "constant float[2] AreaShadow_smoothing" [0 0] "constant float[2] AreaShadow_Vis" [1 1] "constant float[2] AreaShadow_numOpaqueLayers" [10 15] 
+"constant float[2] AreaShadow_rayHairDensityMult" [1 1] "constant float diffuse" [1] "constant float hwshEmbeddedAreaShadow_hwResolution" [1024] "constant float intensity" [0.34999999] "constant float diffuseShadowPercentage" [1] "constant float scatterShadDenMix" [1] "constant float occlusionDensity" [1] "constant float samples" [128] "constant float hwshEmbeddedAreaShadow_num" [1] "constant string worldToLocalXf" ["DomeAreaLight_sl_fil_worldToLocalXf"] "constant string[2] AreaShadow_hitSides" ["both" "both"] "constant float hwshShadowCamFar" [100000] 
+"constant float specularTrans" [0] "constant float specular" [1] "constant float hwshShadingSampleRes" [10] "constant float[2] AreaShadow_enableInCamera" [1 0] "constant string[2] AreaShadow_mapName" ["ShaderBless_Shadow_RT.asm" "ShaderBless_Shadow_HAIR_ASM.asm"] "constant float specularShadowPercentage" [1] "constant string[2] AreaShadow_modifiedComponentName" ["" ""] "constant float[2] AreaShadow_rayHairBiasMult" [1 1] "constant float shadMaxDist" [1e+10] "constant float enableControlVariates" [0] "constant string hwshLightColorMap" ["archives/tex/m2/Chars_DomeAreaLight_sl_fil.tex"] "constant string lightNameUserAtten" ["user:DomeAreaLight_sl_fil:attenuation"] 
+"constant float diffuseTrans" [1] "constant float hwshLowerHemisphereActiveSharg" [0] "constant float roughness" [1] "constant float[2] AreaShadow_sharpness" [3 3] "constant float[2] AreaShadow_mapDeepBias2" [1 0.30000001] "constant string[2] AreaShadow_shadowType" ["rayTrace" "areaMap"] "constant float[2] AreaShadow_enableInTrace" [1 0] "constant float hwshDomeAreaLightColorMap_def" [1] "constant float hwshNumShadowsRes" [3] "constant float[2] AreaShadow_density" [1 1] 
+"constant string[2] AreaShadow_effectScope" ["" ""] "constant color debugShadowColor" [1 0 0] "constant float hwshEmbeddedAreaShadow_hwExclude" [0] "constant float AreaShadow_num" [2] "constant float Vis" [1] "constant string hwshEmbeddedAreaShadow_name" ["DomeAreaLight_sl_fil"] "constant float refraction" [0] "constant float[2] AreaShadow_effectScopeIndex" [-1 -1] "constant float scatter" [1] "constant float hwshShadowCamDomeRadius" [1000] 
+"constant float enableInTrace" [1] "constant string cgComponentType" ["hwshEmbeddedAreaShadow"] "constant string[2] AreaShadow_excludeEffectScope" ["" ""] "constant float[2] AreaShadow_mapHairDensityMult" [1 1] "constant string[2] AreaShadow_worldToLocalXf" ["ShaderBless_Shadow_RT_worldToLocalXf" "ShaderBless_Shadow_HAIR_ASM_worldToLocalXf"] "constant color lightColor" [1 1 1] "constant float glow" [0] "constant float[2] AreaShadow_rayBias" [0.049999997 0.049999997]
+TransformEnd 
+Illuminate "DomeAreaLight_sl_key" 1
+TransformBegin 
+ConcatTransform [ 1000 0 0 0  0 1000 0 0  0 0 1000 0  0 0 0 1 ]
+LightSource "Alight10a/shaders/DomeAreaLight" "DomeAreaLight_sl_key" "constant float specular" [1] "constant string lightSpace" ["DomeAreaLight_sl_key_lightSpace"] "constant float IntMult_effectScopeIndex" [-1] "constant float[2] AreaShadow_threshold" [0 0] "constant string __category" ["lightpbsystem,alight"] "constant float hwshShowSpecular" [1] "constant float[2] AreaShadow_Vis" [1 1] "constant float[2] AreaShadow_sharpness" [3 3] "constant float IntMult_specMult" [1] "constant float occlusionDensity" [1] 
+"constant float[2] AreaShadow_enableInCamera" [1 0] "constant float shadMaxDist" [1e+10] "constant float[2] AreaShadow_density" [1 1] "constant float IntMult_enableInTrace" [1] "constant string hwshLightColorMap" ["archives/tex/m2/Chars_DomeAreaLight_sl_key.tex"] "constant string hwshEmbeddedAreaShadow_name" ["DomeAreaLight_sl_key"] "constant float IntMult_num" [1] "constant float IntMult_Vis" [1] "constant float hwshShowDiffuse" [1] "constant float hwshShadowCamDomeRadius" [1000] "constant float enableInCamera" [1] 
+"constant float[2] AreaShadow_isModified" [0 0] "constant float[2] AreaShadow_hwExclude" [0 0] "constant string[2] AreaShadow_name" ["ShaderBless_Shadow_HAIR_ASM" "ShaderBless_Shadow_RT"] "constant float shadowSamplingMethod" [4] "constant float shadowDensity" [1] "constant float enableControlVariates" [0] "constant string hwshDomeXf" ["DomeAreaLight_sl_key_hwshDomeXf"] "constant float diffuse" [1] "constant float hwshShadowCamNear" [1] "constant float IntMult_diffMult" [1] "constant float hwshShadowCamFar" [100000] 
+"constant float IntMult_isModified" [0] "constant float[2] AreaShadow_rayHairBiasMult" [1 1] "constant float diffuseTrans" [1] "constant float IntMult_reflMult" [1] "constant string[2] AreaShadow_shadowType" ["areaMap" "rayTrace"] "constant float illumSamplingMethod" [3] "constant color shadPenumbraTint" [1 1 1] "constant color debugShadowColor" [1 0 0] 
+"constant float hwshEmbeddedAreaShadow_hwExclude" [0] "constant float Vis" [1] "constant float IntMult_density" [1] "constant float IntMult_enableInCamera" [0] "constant string cgComponentType" ["hwshEmbeddedAreaShadow"] "constant string[2] AreaShadow_hitSides" ["both" "both"] "constant float[2] AreaShadow_mapHairDensityMult" [1 1] "constant float glow" [0] "constant float[2] AreaShadow_rayBias" [0.049999997 0.049999997] "constant float refraction" [0] "constant float[2] AreaShadow_numOpaqueLayers" [15 10] 
+"constant float exposure" [0] "constant float diffuseRecursionSamplingRatio" [0.25] "constant float[2] AreaShadow_mapHairBiasMult" [1 1] "constant string IntMult_name" ["DomeAreaLight_sl_key_IntMult_1"] "constant string IntMult_effectScope" ["(^([^:/]+/)*[^/:]*:([^/]+/)*[^/]*Cornea[^/]*(/|@))"] "constant string lightColorMap" ["archives/tex/m2/Chars_DomeAreaLight_sl_key.tex"] "constant string lightName" ["DomeAreaLight_sl_key"] "constant float[2] AreaShadow_mapDeepBias" [0.5 1] "constant float[2] AreaShadow_rayHairDensityMult" [1 1] "constant float hwshEmbeddedAreaShadow_hwResolution" [1024] "constant float intensity" [0.99000001] 
+"constant float diffuseShadowPercentage" [1] "constant float samples" [64] "constant string[2] AreaShadow_modifiedComponentName" ["" ""] "constant string IntMult_excludeEffectScope" [""] "constant string IntMult_modifiedComponentName" [""] "constant float[2] AreaShadow_enableInTrace" [0 1] "constant float hwshDomeAreaLightColorMap_def" [1] "constant string IntMult_worldToLocalXf" ["DomeAreaLight_sl_key_IntMult_1_worldToLocalXf"] "constant string[2] AreaShadow_effectScope" ["" ""] "constant float scatter" [1] "constant float scatterShadDenMix" [1] "constant float IntMult_intMult" [0] "constant string lightNameUserAtten" ["user:DomeAreaLight_sl_key:attenuation"] "constant color lightColor" [1 1 1] 
+"constant float debugShadows" [0] "constant float hwExclude" [0] "constant string[2] AreaShadow_rayGroup" ["" ""] "constant string worldToLocalXf" ["DomeAreaLight_sl_key_worldToLocalXf"] "constant float[2] AreaShadow_effectScopeIndex" [-1 -1] "constant string[2] AreaShadow_shFileName" ["ShaderBless_Shadow_HAIR_ASM_lyr.ptc" "ShaderBless_Shadow_RT_lyr.ptc"] "constant string[2] AreaShadow_cgComponentType" ["AreaShadow" "AreaShadow"] "constant float specularShadowPercentage" [1] "constant float[2] AreaShadow_mapBias" [0.5 0.30000001] "constant float enableInTrace" [1] "constant float[2] AreaShadow_smoothing" [0 0] 
+"constant float specularTrans" [0] "constant float hwshShadingSampleRes" [10] "constant string[2] AreaShadow_mapName" ["ShaderBless_Shadow_HAIR_ASM.asm" "ShaderBless_Shadow_RT.asm"] "constant float hwshEmbeddedAreaShadow_num" [1] "constant float hwshLowerHemisphereActiveSharg" [0] "constant float IntMult_invert" [0] "constant float roughness" [1] "constant float[2] AreaShadow_mapDeepBias2" [0.30000001 1] "constant string[2] AreaShadow_worldToLocalXf" ["ShaderBless_Shadow_HAIR_ASM_worldToLocalXf" "ShaderBless_Shadow_RT_worldToLocalXf"] "constant float hwshNumShadowsRes" [3] "constant float AreaShadow_num" [2] "constant float reflection" [0] 
+"constant float IntMult_hwExclude" [0] "constant string[2] AreaShadow_excludeEffectScope" ["" ""]
+TransformEnd 
+Illuminate "DomeAreaLight_sl_bnc" 1
+TransformBegin 
+ConcatTransform [ 1000 0 0 0  0 1000 0 0  0 0 1000 0  0 0 0 1 ]
+LightSource "Alight10a/shaders/DomeAreaLight" "DomeAreaLight_sl_bnc" "constant float specular" [1] "constant string lightSpace" ["DomeAreaLight_sl_bnc_lightSpace"] "constant float IntMult_effectScopeIndex" [-1] "constant float[2] AreaShadow_threshold" [0 0] "constant string __category" ["lightpbsystem,alight"] "constant float hwshShowSpecular" [1] "constant float[2] AreaShadow_Vis" [1 1] "constant float[2] AreaShadow_sharpness" [3 3] "constant float IntMult_specMult" [1] "constant float occlusionDensity" [1] 
+"constant float[2] AreaShadow_enableInCamera" [1 0] "constant float shadMaxDist" [1e+10] "constant float[2] AreaShadow_density" [1 1] "constant float IntMult_enableInTrace" [1] "constant string hwshLightColorMap" ["archives/tex/m2/Chars_DomeAreaLight_sl_key.tex"] "constant string hwshEmbeddedAreaShadow_name" ["DomeAreaLight_sl_bnc"] "constant float IntMult_num" [1] "constant float IntMult_Vis" [1] "constant float hwshShowDiffuse" [1] "constant float hwshShadowCamDomeRadius" [1000] "constant float enableInCamera" [1] 
+"constant float[2] AreaShadow_isModified" [0 0] "constant float[2] AreaShadow_hwExclude" [0 0] "constant string[2] AreaShadow_name" ["ShaderBless_Shadow_HAIR_ASM" "ShaderBless_Shadow_RT"] "constant float shadowSamplingMethod" [4] "constant float shadowDensity" [1] "constant float enableControlVariates" [0] "constant string hwshDomeXf" ["DomeAreaLight_sl_bnc_hwshDomeXf"] "constant float diffuse" [1] "constant float hwshShadowCamNear" [1] "constant float IntMult_diffMult" [1] "constant float hwshShadowCamFar" [100000] 
+"constant float IntMult_isModified" [0] "constant float[2] AreaShadow_rayHairBiasMult" [1 1] "constant float diffuseTrans" [1] "constant float IntMult_reflMult" [1] "constant string[2] AreaShadow_shadowType" ["areaMap" "rayTrace"] "constant float illumSamplingMethod" [3] "constant color shadPenumbraTint" [1 1 1] "constant color debugShadowColor" [1 0 0] 
+"constant float hwshEmbeddedAreaShadow_hwExclude" [0] "constant float Vis" [1] "constant float IntMult_density" [1] "constant float IntMult_enableInCamera" [0] "constant string cgComponentType" ["hwshEmbeddedAreaShadow"] "constant string[2] AreaShadow_hitSides" ["both" "both"] "constant float[2] AreaShadow_mapHairDensityMult" [1 1] "constant float glow" [0] "constant float[2] AreaShadow_rayBias" [0.049999997 0.049999997] "constant float refraction" [0] "constant float[2] AreaShadow_numOpaqueLayers" [15 10] 
+"constant float exposure" [0] "constant float diffuseRecursionSamplingRatio" [0.25] "constant float[2] AreaShadow_mapHairBiasMult" [1 1] "constant string IntMult_name" ["DomeAreaLight_sl_bnc_IntMult_1"] "constant string IntMult_effectScope" ["(^([^:/]+/)*[^/:]*:([^/]+/)*[^/]*Cornea[^/]*(/|@))"] "constant string lightColorMap" ["archives/tex/m2/Chars_DomeAreaLight_sl_key.tex"] "constant string lightName" ["DomeAreaLight_sl_bnc"] "constant float[2] AreaShadow_mapDeepBias" [0.5 1] "constant float[2] AreaShadow_rayHairDensityMult" [1 1] "constant float hwshEmbeddedAreaShadow_hwResolution" [1024] "constant float intensity" [0.15000001] 
+"constant float diffuseShadowPercentage" [1] "constant float samples" [64] "constant string[2] AreaShadow_modifiedComponentName" ["" ""] "constant string IntMult_excludeEffectScope" [""] "constant string IntMult_modifiedComponentName" [""] "constant float[2] AreaShadow_enableInTrace" [0 1] "constant float hwshDomeAreaLightColorMap_def" [1] "constant string IntMult_worldToLocalXf" ["DomeAreaLight_sl_bnc_IntMult_1_worldToLocalXf"] "constant string[2] AreaShadow_effectScope" ["" ""] "constant float scatter" [1] "constant float scatterShadDenMix" [1] "constant float IntMult_intMult" [0] "constant string lightNameUserAtten" ["user:DomeAreaLight_sl_bnc:attenuation"] "constant color lightColor" [1 1 1] 
+"constant float debugShadows" [0] "constant float hwExclude" [0] "constant string[2] AreaShadow_rayGroup" ["" ""] "constant string worldToLocalXf" ["DomeAreaLight_sl_bnc_worldToLocalXf"] "constant float[2] AreaShadow_effectScopeIndex" [-1 -1] "constant string[2] AreaShadow_shFileName" ["ShaderBless_Shadow_HAIR_ASM_lyr.ptc" "ShaderBless_Shadow_RT_lyr.ptc"] "constant string[2] AreaShadow_cgComponentType" ["AreaShadow" "AreaShadow"] "constant float specularShadowPercentage" [1] "constant float[2] AreaShadow_mapBias" [0.5 0.30000001] "constant float enableInTrace" [1] "constant float[2] AreaShadow_smoothing" [0 0] 
+"constant float specularTrans" [0] "constant float hwshShadingSampleRes" [10] "constant string[2] AreaShadow_mapName" ["ShaderBless_Shadow_HAIR_ASM.asm" "ShaderBless_Shadow_RT.asm"] "constant float hwshEmbeddedAreaShadow_num" [1] "constant float hwshLowerHemisphereActiveSharg" [0] "constant float IntMult_invert" [0] "constant float roughness" [1] "constant float[2] AreaShadow_mapDeepBias2" [0.30000001 1] "constant string[2] AreaShadow_worldToLocalXf" ["ShaderBless_Shadow_HAIR_ASM_worldToLocalXf" "ShaderBless_Shadow_RT_worldToLocalXf"] "constant float hwshNumShadowsRes" [3] "constant float AreaShadow_num" [2] "constant float reflection" [0] 
+"constant float IntMult_hwExclude" [0] "constant string[2] AreaShadow_excludeEffectScope" ["" ""]
+TransformEnd 
+Illuminate "IrradianceLight_ShaderBless" 1
+TransformBegin 
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+LightSource "Alight10a/shaders/IrradianceLight" "IrradianceLight_ShaderBless" "constant string AreaShadow_rayGroup" [""] "constant float hwExclude" [0] "constant float AreaShadow_mapDeepBias" [0.5] "constant float AreaShadow_smoothing" [0] "constant float AreaShadow_numOpaqueLayers" [15] "constant float falloff" [0.1] "constant string AreaShadow_hitSides" ["both"] "constant float AreaShadow_mapHairDensityMult" [1] "constant float AreaShadow_rayBias" [0.049999997] "constant float shadowDensity" [1] "constant float falloffMode" [1] "constant string __category" ["alight,indirectDiffuseLight"] "constant float numBounces" [1] 
+"constant float bias" [0.010000002] "constant float intensity" [1] "constant string AreaShadow_shadowType" ["areaMap"] "constant float adaptive" [1] "constant float maxPixelDist" [-1] "constant float AreaShadow_hwExclude" [0] "constant float AreaShadow_isModified" [0] "constant float maxDist" [400] "constant float occlusionDensity" [1] "constant float samples" [64] "constant float AreaShadow_mapHairBiasMult" [1] "constant string AreaShadow_modifiedComponentName" [""] "constant float AreaShadow_density" [1] 
+"constant float AreaShadow_mapDeepBias2" [0.30000001] "constant float gamma" [1] "constant float AreaShadow_mapBias" [0.5] "constant float AreaShadow_rayHairBiasMult" [1] "constant float AreaShadow_sharpness" [3] "constant float AreaShadow_enableInCamera" [1] "constant string lightNameUserAtten" ["user:IrradianceLight_ShaderBless:attenuation"] "constant string AreaShadow_mapName" ["IrradianceLight_ShaderBless_AreaShadow_ASM.asm"] "constant string worldToLocalXf" ["IrradianceLight_ShaderBless_worldToLocalXf"] "constant float recursionSamplesRatio" [0.5] "constant float AreaShadow_enableInTrace" [1] "constant string AreaShadow_name" ["IrradianceLight_ShaderBless_AreaShadow_ASM"] "constant string AreaShadow_effectScope" [""] "constant float AreaShadow_rayHairDensityMult" [1] "constant string AreaShadow_worldToLocalXf" ["IrradianceLight_ShaderBless_AreaShadow_ASM_worldToLocalXf"] 
+"constant float sampleBase" [0] "constant float maxVariation" [0] "constant float enableInCamera" [1] "constant string subset" ["IrradianceLight_ShaderBless_lyr"] "constant float AreaShadow_num" [1] "constant float Vis" [1] "constant string hitSides" ["front"] "constant string lightName" ["IrradianceLight_ShaderBless"] "constant float saturation" [1] "constant float enableInTrace" [0] "constant string AreaShadow_excludeEffectScope" [""] "constant float AreaShadow_effectScopeIndex" [-1] "constant float AreaShadow_Vis" [1] "constant float AreaShadow_threshold" [0] 
+"constant color tint" [1 1 1] "constant string AreaShadow_shFileName" ["IrradianceLight_ShaderBless_AreaShadow_ASM_lyr.ptc"]
+TransformEnd 
+Illuminate "RectAreaLight_sl_eyehilite" 1
+TransformBegin 
+ConcatTransform [ -0.86822712 -0.49616691 2.1273193e-08 0  0.19424345 -0.33990064 -0.92018312 0  0.45656446 -0.79892784 0.39148811 0  1808.33 -3164.3401 1549.5798 1 ]
+LightSource "Alight10a/shaders/DiskAreaLight" "RectAreaLight_sl_eyehilite" "constant float hwshDiskAreaLightColorMap_def" [0] "constant string AreaShadow_cgComponentType" ["AreaShadow"] "constant float specular" [1] "constant float IntMult_effectScopeIndex" [-1] "constant string AreaShadow_hitSides" ["both"] "constant float AreaShadow_mapHairDensityMult" [1] "constant float hwshShadowCamFar" [100000] "constant string __category" ["lightpbsystem,alight"] "constant float hwshShowSpecular" [1] "constant float IntMult_specMult" [1] "constant float AreaShadow_isModified" [0] "constant float occlusionDensity" [1] "constant float AreaShadow_mapHairBiasMult" [1] "constant float AreaShadow_rayHairDensityMult" [1] 
+"constant string AreaShadow_rayGroup" [""] "constant float IntMult_enableInTrace" [1] "constant string hwshLightColorMap" ["archives/tex/m2/Chars_RectAreaLight_sl_eyehilite.tex"] "constant string hwshEmbeddedAreaShadow_name" ["RectAreaLight_sl_eyehilite"] "constant float IntMult_num" [1] "constant float IntMult_Vis" [1] "constant float hwshShowDiffuse" [1] "constant string AreaShadow_shFileName" ["RectAreaLight_sl_eyehilite_AreaShadow_1_lyr.ptc"] "constant float AreaShadow_mapDeepBias" [1] "constant float radius" [300] "constant float enableInCamera" [1] "constant float falloff" [2] "constant float shadowSamplingMethod" [1] "constant float AreaShadow_rayBias" [0.049999997] 
+"constant float shadowDensity" [1] "constant float focusFalloff" [0] "constant float intensityNearDist" [0] "constant float diffuse" [1] "constant float hwshShadowCamNear" [1] "constant float IntMult_diffMult" [1] "constant float scatterShadDenMix" [1] "constant float AreaShadow_enableInTrace" [1] "constant float AreaShadow_mapDeepBias2" [1] "constant float IntMult_isModified" [0] "constant float AreaShadow_rayHairBiasMult" [1] "constant float AreaShadow_Vis" [1] 
+"constant float diffuseTrans" [1] "constant float IntMult_reflMult" [1] "constant string AreaShadow_effectScope" [""] "constant float illumSamplingMethod" [0] "constant color shadPenumbraTint" [1 1 1] "constant color debugShadowColor" [1 0 0] "constant float hwshEmbeddedAreaShadow_hwExclude" [0] "constant float Vis" [1] "constant float maxSamples" [256] 
+"constant float IntMult_density" [1] "constant float IntMult_enableInCamera" [1] "constant string cgComponentType" ["hwshEmbeddedAreaShadow"] "constant float AreaShadow_effectScopeIndex" [-1] "constant string AreaShadow_worldToLocalXf" ["RectAreaLight_sl_eyehilite_AreaShadow_1_worldToLocalXf"] "constant float glow" [0] "constant float refraction" [0] "constant float exposure" [0] "constant float diffuseRecursionSamplingRatio" [0.5] "constant float AreaShadow_smoothing" [0] "constant float AreaShadow_numOpaqueLayers" [10] "constant string IntMult_name" ["RectAreaLight_sl_eyehilite_IntMult_1"] "constant string IntMult_effectScope" [""] "constant float AreaShadow_enableInCamera" [1] 
+"constant string lightColorMap" [""] "constant string lightName" ["RectAreaLight_sl_eyehilite"] "constant float hwshEmbeddedAreaShadow_hwResolution" [1024] "constant float AreaShadow_hwExclude" [0] "constant float intensity" [250] "constant float diffuseShadowPercentage" [1] "constant float samples" [16] "constant float AreaShadow_density" [1] "constant string IntMult_excludeEffectScope" ["(^([^:/]+/)*[^/:]*:([^/]+/)*[^/]*Cornea[^/]*(/|@))"] "constant string IntMult_modifiedComponentName" [""] "constant float penumbraSamplesMult" [1] "constant float scatter" [1] "constant string IntMult_worldToLocalXf" ["RectAreaLight_sl_eyehilite_IntMult_1_worldToLocalXf"] "constant string AreaShadow_excludeEffectScope" [""] "constant float IntMult_intMult" [0] 
+"constant string lightNameUserAtten" ["user:RectAreaLight_sl_eyehilite:attenuation"] "constant color lightColor" [1 1 1] "constant float debugShadows" [0] "constant float hwExclude" [0] "constant string worldToLocalXf" ["RectAreaLight_sl_eyehilite_worldToLocalXf"] "constant float AreaShadow_sharpness" [3] "constant float menvIntensity" [1] "constant float specularShadowPercentage" [1] "constant float enableInTrace" [1] "constant string AreaShadow_shadowType" ["rayTrace"] "constant string AreaShadow_modifiedComponentName" [""] "constant float specularTrans" [0] 
+"constant float AreaShadow_mapBias" [0.30000001] "constant float hwshShadingSampleRes" [10] "constant color focusFalloffTint" [0 0 0] "constant float minSamples" [16] "constant float hwshEmbeddedAreaShadow_num" [1] "constant string AreaShadow_mapName" ["RectAreaLight_sl_eyehilite_AreaShadow_1.asm"] "constant float IntMult_invert" [0] "constant float roughness" [1] "constant float hwshNumShadowsRes" [3] "constant float AreaShadow_threshold" [0] "constant float AreaShadow_num" [1] 
+"constant float reflection" [0] "constant float IntMult_hwExclude" [0] "constant string AreaShadow_name" ["RectAreaLight_sl_eyehilite_AreaShadow_1"]
+TransformEnd 
+Illuminate "TraceLight_studio" 1
+TransformBegin 
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+LightSource "Alight10a/shaders/TraceLight" "TraceLight_studio" "constant string __category" ["alight,lightpbsystemtrace"] "constant float numBounces" [1] "constant float hwExclude" [0] "constant float bias" [0.010000002] "constant float intensity" [1] "constant float enableLightBlocker" [0] "constant string lightName" ["TraceLight_studio"] "constant float Vis" [1] "constant float maxDist" [-1] "constant float enableInCamera" [1] "constant string worldToLocalXf" ["TraceLight_studio_worldToLocalXf"] "constant float disableSpecInTrace" [1] "constant float enableInTrace" [0] "constant float falloff" [2] 
+"constant float occlusionDensity" [1] "constant float samples" [-1] "constant string lightNameUserAtten" ["user:TraceLight_studio:attenuation"] "constant float recursionSamplesRatio" [0.5] "constant float shadowDensity" [1] "constant string subset" ["TraceLight_studio_lyr"]
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "ScatterLight_Studio_noIrr_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "ScatterLight_Studio_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "IrradianceLight_ShaderBless_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "IrradianceLight_ShaderBless_AreaShadow_ASM_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "TraceLight_studio_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_fil_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 -4.3711395e-08 1 0  0 1 4.3711395e-08 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_fil_lightSpace"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -4.3711395e-08 1 0 0  -1 -4.3711395e-08 0 0  0 0 -1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_fil_hwshDomeXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 -4.3711395e-08 1 0  0 1 4.3711395e-08 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_lightSpace"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -4.3711395e-08 1 0 0  -1 -4.3711395e-08 0 0  0 0 -1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_hwshDomeXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_IntMult_1_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 -4.3711395e-08 1 0  0 1 4.3711395e-08 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_lightSpace"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -4.3711395e-08 1 0 0  -1 -4.3711395e-08 0 0  0 0 -1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_hwshDomeXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_IntMult_1_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -0.86822712 -0.49616691 2.1273193e-08 0  -0.19424345 0.33990064 0.92018312 0  -0.45656446 0.79892784 -0.39148811 0  1808.33 -3164.3401 1549.5798 1 ]
+CoordinateSystem "RectAreaLight_sl_eyehilite_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -0.86822712 -0.49616691 2.1273193e-08 0  -0.19424345 0.33990064 0.92018312 0  -0.45656446 0.79892784 -0.39148811 0  1808.33 -3164.3401 1549.5798 1 ]
+CoordinateSystem "RectAreaLight_sl_eyehilite_IntMult_1_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -0.86822712 -0.49616691 2.1273193e-08 0  -0.19424345 0.33990064 0.92018312 0  -0.45656446 0.79892784 -0.39148811 0  1808.33 -3164.3401 1549.5798 1 ]
+CoordinateSystem "RectAreaLight_sl_eyehilite_AreaShadow_1_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -0.86822712 -0.49616691 2.1273193e-08 0  -0.19424345 0.33990064 0.92018312 0  -0.45656446 0.79892784 -0.39148811 0  1808.33 -3164.3401 1549.5798 1 ]
+CoordinateSystem "RectAreaLight_sl_eyehilite_SpecTest_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -0.86822712 -0.49616691 2.1273193e-08 0  -0.19424345 0.33990064 0.92018312 0  -0.45656446 0.79892784 -0.39148811 0  1808.33 -3164.3401 1549.5798 1 ]
+CoordinateSystem "RectAreaLight_sl_eyehilite_SpecTest_AreaShadow_1_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -0.86822712 -0.49616691 2.1273193e-08 0  -0.19424345 0.33990064 0.92018312 0  -0.45656446 0.79892784 -0.39148811 0  1808.33 -3164.3401 1549.5798 1 ]
+CoordinateSystem "RectAreaLight_sl_eyehilite_SpecTest_IntMult_1_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_fil_ReflTest_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 -4.3711395e-08 1 0  0 1 4.3711395e-08 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_fil_ReflTest_lightSpace"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -4.3711395e-08 1 0 0  -1 -4.3711395e-08 0 0  0 0 -1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_fil_ReflTest_hwshDomeXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_fil_ReflTest_AreaShadow_RT_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_fil_ReflTest_AreaShadow_ASM_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_ReflTest_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 -4.3711395e-08 1 0  0 1 4.3711395e-08 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_ReflTest_lightSpace"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -4.3711395e-08 1 0 0  -1 -4.3711395e-08 0 0  0 0 -1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_ReflTest_hwshDomeXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_ReflTest_IntMult_1_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_ReflTest_AreaShadow_RT_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_key_ReflTest_AreaShadow_ASM_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_ReflTest_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 -4.3711395e-08 1 0  0 1 4.3711395e-08 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_ReflTest_lightSpace"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ -4.3711395e-08 1 0 0  -1 -4.3711395e-08 0 0  0 0 -1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_ReflTest_hwshDomeXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_ReflTest_IntMult_1_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_ReflTest_AreaShadow_RT_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 0 1 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "DomeAreaLight_sl_bnc_ReflTest_AreaShadow_ASM_worldToLocalXf"
+TransformEnd 
+TransformBegin 
+Rotate 90 1 0 0
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 -1 0  0 0 0 1 ]
+ConcatTransform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
+CoordinateSystem "TraceLight_studio_ReflTest_worldToLocalXf"
+TransformEnd 

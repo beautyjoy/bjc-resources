@@ -1,0 +1,38 @@
+##RenderMan RIB
+#CameraNode: |persp|perspShape
+version 3.03999996
+ArchiveBegin "perspShape"
+Clipping 0.100000001 10000
+Projection "perspective" "fov" [54.4322243]
+ConcatTransform [ 0.997564077 0.0109123169 0.0688976571 0  -1.73472348e-18 0.987688363 -0.156434461 -0  0.0697564706 -0.156053394 -0.985282362 0  -0.868431211 -4.60459995 32.7664032 1 ]
+ArchiveEnd 
+#CameraNode: |top|topShape
+ArchiveBegin "topShape"
+Clipping 0.100000001 10000
+Projection "orthographic" 
+ConcatTransform [ 1 0 -0 0  0 2.22044605e-16 -1 0  0 -1 -2.22044605e-16 0  -3.17266178 3.23160672 100.48439 1 ]
+ArchiveEnd 
+#CameraNode: |front|frontShape
+ArchiveBegin "frontShape"
+Clipping 0.100000001 10000
+Projection "orthographic" 
+ConcatTransform [ 1 0 -0 0  0 1 -0 0  0 0 -1 0  1.40930259 -5.07744217 100.437889 1 ]
+ArchiveEnd 
+#CameraNode: |side|sideShape
+ArchiveBegin "sideShape"
+Clipping 0.100000001 10000
+Projection "orthographic" 
+ConcatTransform [ 2.22044605e-16 0 -1 0  0 1 -0 0  -1 0 -2.22044605e-16 0  0.206449792 -3.96954608 100.262596 1 ]
+ArchiveEnd 
+#CameraNode: |mainCam|mainCamShape
+ArchiveBegin "mainCamShape"
+Clipping 0.100000001 10000
+Projection "perspective" "fov" [0.589322805]
+ConcatTransform [ 0.999408364 0.0343942679 -0 0  -0.0343942679 0.999408364 0 0  0 0 -1 0  0.346906334 -4.56090641 5708.43213 1 ]
+ArchiveEnd 
+#CameraNode: |persp1|persp1Shape
+ArchiveBegin "persp1Shape"
+Clipping 0.100000001 10000
+Projection "perspective" "fov" [54.4322243]
+ConcatTransform [ 0.866025388 0.0782172307 0.493844181 0  -1.38777878e-17 0.987688363 -0.156434461 -0  0.5 -0.135476217 -0.85536319 0  -2.18633175 -4.08582783 7.22041607 1 ]
+ArchiveEnd 

@@ -1,0 +1,11 @@
+ArchiveBegin "px_renderDeclareRIBBoxes"
+# Render Global Archive: Chars
+	ReadArchive "/home/petertsoi/Desktop/byob/rib/M2_Chars.rib"
+ArchiveEnd
+
+ArchiveBegin "px_renderFrameRIBBoxes"
+ArchiveEnd
+
+ArchiveBegin "px_renderWorldRIBBoxes"
+ArchiveEnd
+
